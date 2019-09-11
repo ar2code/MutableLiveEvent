@@ -1,0 +1,2 @@
+include ':liveevent'
+rootProject.name='MutableLiveEvent'
