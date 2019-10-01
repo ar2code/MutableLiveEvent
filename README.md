@@ -11,6 +11,20 @@ MutableLiveEvent has the following properties:
 1.	Retrieves data only with an active subscription. If you subscribe to the event after it was sent, then the observer will not handle event.
 2.	You can set handled to true for the event data. It means that event was handled and you do not want this event to be handled by any other observers.
 
+## Add to your project
+
+To start using this library, add these lines to the build.gradle of your project:
+
+```xml
+repositories {
+    jcenter()
+}
+
+dependencies {
+    implementation 'ru.ar2code.mutableliveevent:MutableLiveEvent:1.0.0'
+}
+```
+
 ## How to use
 
 ```kotlin
