@@ -22,7 +22,7 @@ class MutableLiveEvent<T : EventArgs<Any>> : MutableLiveData<T>() {
         val wrapper = PendingObserver(observer)
         observers.add(wrapper)
 
-        super.observeForever(observer)
+        super.observeForever(wrapper)
     }
 
     @MainThread

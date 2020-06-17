@@ -1,6 +1,8 @@
+apply plugin: 'com.novoda.bintray-release'
 apply plugin: 'com.android.library'
 apply plugin: 'kotlin-android'
 apply plugin: 'kotlin-android-extensions'
+
 android {
     compileSdkVersion 29
 
@@ -22,6 +24,20 @@ android {
         }
     }
 
+}
+
+publish {
+    def groupProjectID = 'ru.ar2code.mutableliveevent'
+    def artifactProjectID = 'MutableLiveEvent'
+    def publishVersionID = '1.0.0'
+
+    userOrg = 'ar2code'
+    repoName = 'MutableLiveEvent'
+    groupId = groupProjectID
+    artifactId = artifactProjectID
+    publishVersion = publishVersionID
+    desc = 'LiveEvent based on Android LiveData'
+    website = 'https://github.com/ar2code/MutableLiveEvent'
 }
 
 dependencies {
