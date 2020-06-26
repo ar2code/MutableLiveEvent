@@ -21,7 +21,7 @@ repositories {
 }
 
 dependencies {
-    implementation 'ru.ar2code.mutableliveevent:mutableliveevent:1.0.0'
+    implementation 'ru.ar2code.mutableliveevent:mutableliveevent:1.0.1'
 }
 ```
 
